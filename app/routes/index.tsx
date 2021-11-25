@@ -24,6 +24,10 @@ export let loader: LoaderFunction = () => {
       {
         name: "Remix Discord",
         url: "https://discord.gg/VBePs6d"
+      },
+      {
+        name: "SWAPI",
+        url: "https://swapi.dev/"
       }
     ],
     demos: [
@@ -61,19 +65,43 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
-        <h2>Welcome to Remix!</h2>
-        <p>We're stoked that you're here. 🥳</p>
-        <p>
-          Feel free to take a look around the code to see how Remix does things,
-          it might be a bit different than what you’re used to. When you're
-          ready to dive deeper, we've got plenty of resources to get you
-          up-and-running quickly.
-        </p>
-        <p>
-          Check out all the demos in this starter, and then just delete the{" "}
-          <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
-          folders when you're ready to turn this into your next project.
-        </p>
+        <div className="home">
+          <div className="portrait-wrapper">
+            <img className="portrait" src="/assets/img/portrait.jpg" alt="Portrait de Jérémy Buget" />
+          </div>
+
+          <p>👋 Salut ! je m’appelle Jérémy. Je suis <a href="https://github.com/jbuget">développeur Web full
+            stack</a> depuis 2007.</p>
+
+          <p>J’aime créer des sites, applications ou plateformes Web à fort impact / trafic, avec une appétence
+            particulière pour les secteurs du service public, de l’éducation, du numérique et du sport.</p>
+
+          <p><strong>Diplômé de l’EPITA en 2008</strong>, majeure Multimédia et Technologies de l’Information (MTI), je
+            me suis spécialisé dans le <strong>développement d’applications Web riches</strong> en Java puis JavaScript.
+          </p>
+
+          <p>J’interviens depuis 2011 en tant que <strong>tech lead / expert technique / coach agile /
+            facilitateur</strong> au sein de tous types d’équipes, projets, contextes, clients ou domaines d’activités
+            tels que la <a href="https://tickets.rolandgarros.com">FFT</a>, Club Med, CNP Assurances, Allianz, Swiss
+            Life, la SGCIB, ING, Crédit Agricole, Fortuneo, etc.</p>
+
+          <p>En 2016, je suis devenu <strong><a href="https://rejoins.octo.com/tribes#68-web-front">leader de la tribu
+            WEBF</a></strong> dédiée au développement d’interfaces Web modernes et innovantes à l’état de l’art.</p>
+
+          <p>La même année, j’ai participé à la création de la <a href="https://beta.gouv.fr/startups/pix">Startup
+            d’État Pix</a>, aujourd’hui devenu groupement d’intérêt public (GIP) <a href="pix.fr">Pix</a>, pour duquel
+            j’assume la double charge de <strong>CTO &amp; DSI</strong>.</p>
+
+          <p>Mon but quand je me lève tous les matins consiste à <em>“aider les gens à s’épanouir et prendre du plaisir
+            à travers ou au sein du numérique en accomplissant de grandes et belles choses ensemble”</em>.</p>
+
+          <p>J’habite près de Paris avec ma femme, nos 3 enfants et Goliath, notre vieux bulldog anglais.</p>
+
+          <p>Vous pouvez me retrouver sur <a href="https://github.com/jbuget">GitHub</a>, <a
+            href="https://twitter.com/jbuget">Twitter</a>, ou <a href="https://www.linkedin.com/in/jbuget">LinkedIn</a>.
+          </p>
+
+        </div>
       </main>
       <aside>
         <h2>Demos In This App</h2>
